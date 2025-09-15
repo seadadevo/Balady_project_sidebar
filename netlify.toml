@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/send_to_internit.html"
+  status = 200
