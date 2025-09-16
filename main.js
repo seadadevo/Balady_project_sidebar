@@ -209,6 +209,14 @@ toggleButtons.forEach(toggleButton => {
 });
 
 
+const footer = document.querySelector('.myFooter')
+const allBox =footer.querySelectorAll('.box')
+
+allBox.forEach(box => {
+    box.addEventListener('click', () => {
+        box.classList.toggle('active')
+    })
+});
 
 
 

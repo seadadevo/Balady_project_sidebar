@@ -18,6 +18,7 @@
     --card-bg: #1d2125;
     --border-color: #444;
     --text-color: #fff;
+    --border-header-color: rgb(67 60 60);
 }
 .comfort-read .card ,
 .visual-comfort .card ,
@@ -26,9 +27,9 @@
 }
 
 
-.language-select-container{
+/* .language-select-container{
     background-color: red;
-}
+} */
 
 .switch {
     position: relative;
@@ -113,8 +114,9 @@ input:checked + .slider:before {
     --border-color: #ddd;
     color: black;
     --text-color: #000;
-    --
-}
+    --border-header-color: rgb(128 130 138);
+   
+}   
 
 /* وضع الظلام (الإفتراضي) */
 .side-bar.dark-mode {
@@ -283,7 +285,7 @@ input:checked + .slider:before {
 .setting .icons{
     display: flex;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 10%);
+    border: 1px solid  var(--border-header-color);
     gap: 10px;
     border-radius: 20px;
 }
@@ -645,10 +647,21 @@ input:checked + .slider:before {
     position: relative;
     color: #fff;
 }
-
-.select-container .language-select-container:last-child{
-    margin-bottom: 80px;
+.language-select-container p {
+    padding-right: 10px;
 }
+.select-container{ 
+    margin-bottom: 80px;
+
+}
+
+.select-container h3{
+    margin-top: 21px;
+    margin-bottom: -15px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
 
 /* تنسيق رأس القائمة */
 .language-select-header.chooseLangParag{
@@ -657,6 +670,7 @@ input:checked + .slider:before {
     color: var(--text-color);
     font-size: 15px;
     font-weight: bold;
+        
 }
 
 /* إخفاء السهم الافتراضي للقائمة */
@@ -715,6 +729,13 @@ input:checked + .slider:before {
     justify-content: center;
     background-color: var(--main-color);
     border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.myFooter .box.active{ 
+    background-color: #0c5a00 ;
+    
 }
 
 
