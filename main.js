@@ -100,7 +100,7 @@ let langTextClass = document.querySelectorAll(".language-text-last");
 let langOptionClass = document.querySelectorAll(".language-option");
 let flagLast = document.querySelectorAll(".last")
 let smartHelp = document.querySelector(".smart-assistant");
-let closeSideBar = document.querySelector(".close");
+let closeSideBar = document.querySelector(".setting .close");
 
 langSelected.addEventListener("click",function(){
     langOption.classList.toggle("appear");
@@ -110,9 +110,11 @@ langSelected.addEventListener("click",function(){
 // Coding For Smart Assistant 
 smartHelp.addEventListener("click",function(){
     sideBar.classList.toggle("active");
+    smartHelp.classList.add('active')
 });
 
 closeSideBar.addEventListener("click",function(){
+    smartHelp.classList.remove('active')
     sideBar.classList.remove("active");
 })
 // Coding For Smart Assistant 
